@@ -55,7 +55,7 @@ class PlaylistCommand extends AbstractCommand
          * @var Playlist $youtube
          */
         $youtube = $this->getContainer()->get('crawler.youtube');
-        $userName = $this->_getOrAskForParam(
+        $userName = $this->_getOrAskForArgument(
             'userName',
             'Enter userName of which playlists you want: '
         );
